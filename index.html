@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <title>My site</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend style="text-align: center;"> مشخصات زیر را کامل کنید.</legend>
+            <p>توجه داشته باشید فیلد هایی که در کنار آنها  (*)  میباشد پر کردن آنها الزامی میباشد.</p>
+            <br>
+            <label for="first">*نام :</label>
+        <input type="text" name="firstname" placeholder="نام خود را وارد کنید" id="first" autofocus required size="20">
+        <br><br>
+        <label for="last">*نام خانوادگی :</label>
+        <input type="text" id="last" placeholder="نام خانوادگی خود را وارد کنید." name="lastname" required size="20">
+        <br><br>
+        <label for="code">*کد ملی خود را وارد کنید.</label>
+        <input type="tel" id="code" placeholder="کد ملی خو را وارد کنید" name="code" required size="25" maxlength="10">
+        <br><br>
+        <label for="phone_hamrah">*شماره تلفن همراه خود را وارد کنید.</label>
+        <input type="tel" required id="phone_hamrah" name="phone_hamrah" placeholder="98+" size="30" maxlength="11">
+        <br><br>
+        <label for="phone_office">شماره محل کار خود را وارد کنید.</label>
+        <input type="tel" name="phone_office" id="phone_office" placeholder=" 071" size="25">
+        <br><br>
+        <label for="color_page">رنگ مورد علاقه برای سایت خود را انتخاب کنید</label>
+        <input type="color" name="color" value="#ff54bb" id="color_page">
+        <br><br>
+        <label for="bodje">بودجه شما برای انجام پروژه . . . </label>
+        <span>بین 1 تا 5 میلیون تومان</span>
+        <input type="radio" name="bodje">
+        <span>بین 5 تا 10 میلیون تومان</span>
+        <input type="radio" name="bodje">
+        <span>10 میلیون به بالا</span>
+        <input type="radio" name="bodje" checked>
+        <br><br>
+        <label>*نوع وبسایت درخواستی شما :</label>
+        <select required>
+            <option>شرکتی</option>
+            <option>خدماتی</option>
+            <option>سایر . . </option>    
+        </select>
+        <br><br>
+        <label>زمان انجام تحویل پروژه:</label>
+        <span>40 روز</span>
+        <input type="range">
+        <span>20 روز</span>
+        <br><br>
+        <textarea placeholder="توضیحات . . ."  style="width: 200px; height: 300px;"></textarea>
+        <br><br>
+        <input type="submit" value="ثبت درخواست" class="submit">
+        </fieldset>
+    </form>
+</body>
